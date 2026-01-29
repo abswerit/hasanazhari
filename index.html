@@ -8,8 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Hind Siliguri', sans-serif; scroll-behavior: smooth; }
-        .gradient-bg { background: linear-gradient(135deg, #006837 0%, #ed1c24 100%); }
+        .gradient-bg { background: linear-gradient(135deg, #006837 0%, #1a4a2e 100%); }
         .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .mombati-icon { filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5)); }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -18,72 +19,87 @@
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="text-xl font-bold text-green-700">নির্বাচনী প্রচারণা ২০২৫</div>
-            <nav class="hidden md:flex space-x-6 font-semibold">
+            <nav class="hidden md:flex space-x-6 font-semibold text-sm lg:text-base">
                 <a href="#home" class="hover:text-red-600">হোম</a>
                 <a href="#about" class="hover:text-red-600">পরিচিতি</a>
                 <a href="#manifesto" class="hover:text-red-600">অঙ্গীকারনামা</a>
             </nav>
-            <div class="bg-red-600 text-white px-4 py-1 rounded-full text-sm">মোমবাতি মার্কায় ভোট দিন</div>
+            <div class="bg-red-600 text-white px-4 py-1 rounded-full text-xs md:text-sm font-bold animate-pulse">মোমবাতি মার্কায় ভোট দিন</div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="gradient-bg text-white py-16">
+    <section id="home" class="gradient-bg text-white py-12 lg:py-20">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 text-center md:text-left">
                 <p class="text-lg mb-2">বিসমিল্লাহির রাহমানির রাহিম</p>
                 <h2 class="text-2xl md:text-3xl font-bold mb-4">আসন্ন ত্রয়োদশ জাতীয় সংসদ নির্বাচনে</h2>
-                <h3 class="text-xl mb-4">চট্টগ্রাম-৮ (বোয়ালখালী-চান্দগাঁও-পাঁচলাইশ-বায়েজিদ আংশিক) সংসদীয় আসনে</h3>
-                <p class="bg-yellow-400 text-black inline-block px-4 py-1 rounded font-bold mb-6">বৃহত্তর সুন্নী জোট সমর্থিত বাংলাদেশ ইসলামী ফ্রন্ট মনোনীত</p>
-                <h1 class="text-4xl md:text-6xl font-extrabold mb-4">সৈয়দ মোহাম্মদ হাসান আজহারী</h1>
-                <p class="text-xl italic mb-8">তারুণ্যের আইডল, অন্যায় ও অসত্যের বিরুদ্ধে প্রতিবাদী কণ্ঠস্বর</p>
+                <h3 class="text-xl mb-4 leading-relaxed">চট্টগ্রাম-৮ (বোয়ালখালী-চান্দগাঁও-পাঁচলাইশ-বায়েজিদ আংশিক) সংসদীয় আসনে</h3>
+                <p class="bg-yellow-400 text-black inline-block px-4 py-1 rounded font-bold mb-6 text-sm md:text-base">বৃহত্তর সুন্নী জোট সমর্থিত বাংলাদেশ ইসলামী ফ্রন্ট মনোনীত</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">সৈয়দ মোহাম্মদ হাসান আজহারী</h1>
+                <p class="text-lg md:text-xl italic mb-8 opacity-90">তারুণ্যের আইডল, অন্যায় ও অসত্যের বিরুদ্ধে প্রতিবাদী কণ্ঠস্বর</p>
+                
                 <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-                    <div class="bg-white text-black p-4 rounded-lg shadow-xl flex items-center gap-4">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/candle.png" alt="Candle" class="w-12">
-                        <span class="text-2xl font-bold">মোমবাতি মার্কায় ভোট দিন</span>
+                    <div class="bg-white text-black p-4 rounded-lg shadow-xl flex items-center gap-4 border-2 border-yellow-500">
+                        <!-- Candle SVG Icon (Directly embedded so it always loads) -->
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C12 2 9 6 9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8C15 6 12 2 12 2Z" fill="#FF9800"/>
+                            <rect x="10" y="11" width="4" height="11" rx="1" fill="#333"/>
+                            <path d="M10 13H14" stroke="white" stroke-width="0.5"/>
+                            <path d="M10 16H14" stroke="white" stroke-width="0.5"/>
+                            <path d="M10 19H14" stroke="white" stroke-width="0.5"/>
+                        </svg>
+                        <span class="text-2xl lg:text-3xl font-black">মোমবাতি মার্কায় ভোট দিন</span>
                     </div>
                 </div>
             </div>
             <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
                 <div class="relative">
-                    <div class="absolute inset-0 bg-white rounded-full opacity-20 blur-3xl"></div>
-                    <!-- Using the raw link for GitHub image display -->
-                    <img src="https://raw.githubusercontent.com/abswerit/hasanazhari/main/portrait.png" alt="Hasan Azhari" class="relative z-10 w-72 h-72 md:w-96 md:h-96 object-cover rounded-full border-8 border-white shadow-2xl">
+                    <div class="absolute inset-0 bg-green-400 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+                    <img src="https://raw.githubusercontent.com/abswerit/hasanazhari/main/portrait.png" alt="Hasan Azhari" class="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-full border-8 border-white shadow-2xl">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Biography Section -->
-    <section id="about" class="py-20 bg-white">
+    <section id="about" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-12 border-b-4 border-green-600 inline-block pb-2 mx-auto flex">ব্যক্তি পরিচিতি ও কর্মজীবন</h2>
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold border-b-4 border-green-600 inline-block pb-2">ব্যক্তি পরিচিতি ও কর্মজীবন</h2>
+                </div>
                 
-                <div class="bg-gray-100 p-8 rounded-2xl shadow-inner mb-8">
+                <div class="bg-gray-50 p-6 md:p-10 rounded-2xl shadow-sm mb-8 border border-gray-100">
                     <p class="text-lg leading-relaxed mb-6">
-                        ১৯৯২ সালের ১৪ ডিসেম্বর চট্টগ্রামের বায়েজিদ থানার এক সম্ভ্রান্ত মুসলিম পরিবারে জন্মগ্রহণ করেন। তাঁর সম্মানিত পিতা মুফতি মাওলানা সৈয়দ আখিুর রহমান আল কাদেরি বিখ্যাত জামেয়া আহমদিয়া সুন্নিয়া কামিল মাদরাসার সাবেক প্রধান মুফতি এবং অধ্যক্ষ। তাঁর সম্মানিতা মাতা মরহুমা সৈয়দা জাহানারা বেগম।
+                        ১৯৯২ সালের ১৪ ডিসেম্বর চট্টগ্রামের বায়েজিদ থানার এক সম্ভ্রান্ত মুসলিম পরিবারে জন্মগ্রহণ করেন। তাঁর সম্মানিত পিতা মুফতি মাওলানা সৈয়দ অছিয়র রহমান আল কাদেরি বিখ্যাত জামেয়া আহমদিয়া সুন্নিয়া কামিল মাদরাসার সাবেক প্রধান মুফতি এবং অধ্যক্ষ। তাঁর সম্মানিতা মাতা মরহুমা সৈয়দা জাহানারা বেগম।
                     </p>
-                    <p class="text-lg leading-relaxed mb-6 border-l-4 border-red-600 pl-4 bg-red-50 py-4 italic">
-                        পারিবারিকভাবে উন্নত চরিত্র এবং নেতৃত্ব গুণে বেড়ে ওঠা এই ব্যক্তিত্ব বিশ্বখ্যাত আল-আজহার বিশ্ববিদ্যালয় থেকে শরিয়াহ ও আইনে স্নাতক সম্পন্ন করেছেন এবং বর্তমানে ইউনিভার্সিটি অব মালয়াতে এমফিল করছেন। তাঁর কর্মজীবন ও চিন্তাধারায় অন্যায় দমনে হযরত শাহজালাল (র.)-এর ‘জালালি প্রেরণা’ পরিলক্ষিত হয়, যা তাঁর ‘অন্যায়কে অন্যায় বলতে না পারলে মুসলমান হওয়ার দরকার নেই’-এই বলিষ্ঠ বক্তব্যের মাধ্যমে ফুটে ওঠে।
-                    </p>
+                    <div class="bg-red-50 border-l-8 border-red-600 p-6 italic mb-6">
+                        <p class="text-lg text-gray-800">
+                            "পারিবারিকভাবে উন্নত চরিত্র এবং নেতৃত্ব গুণে বেড়ে ওঠা এই ব্যক্তিত্ব বিশ্বখ্যাত আল-আজহার বিশ্ববিদ্যালয় থেকে শরিয়াহ ও আইনে স্নাতক সম্পন্ন করেছেন এবং বর্তমানে ইউনিভার্সিটি অব মালয়াতে এমফিল করছেন। তাঁর কর্মজীবন ও চিন্তাধারায় অন্যায় দমনে হযরত শাহজালাল (র.)-এর ‘জালালি প্রেরণা’ পরিলক্ষিত হয়, যা তাঁর <strong>‘অন্যায়কে অন্যায় বলতে না পারলে মুসলমান হওয়ার দরকার নেই’</strong>—এই বলিষ্ঠ বক্তব্যের মাধ্যমে ফুটে ওঠে।"
+                        </p>
+                    </div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-green-50 p-6 rounded-xl border border-green-200">
-                        <h4 class="font-bold text-green-800 mb-4 text-xl">পেশাগত ও সামাজিক অবদান</h4>
-                        <p class="text-sm leading-relaxed">
+                    <div class="bg-white p-6 rounded-xl border-l-4 border-green-600 shadow-md">
+                        <h4 class="font-bold text-green-800 mb-4 text-xl underline decoration-yellow-400">পেশাগত ও সামাজিক অবদান</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm lg:text-base">
                             পেশাগত জীবনে তিনি খেতাবত, শিক্ষকতা ও প্রশাসনিক দায়িত্ব পালনের পাশাপাশি বর্তমানে দ্বীনি দাওয়াতের ময়দানে অত্যন্ত সক্রিয়, যেখানে তিনি হাজারো যুবকের অনুপ্রেরণার উৎস। মানবসেবায় তাঁর ভূমিকা অনন্য; ২০১১ সালের লিবিয়া সংকটে আটকে পড়া বাংলাদেশিদের উদ্ধার, ২০২০ সালের কোভিড-১৯ মহামারিতে সরাসরি দাফন ও ত্রাণ কার্যক্রম এবং ২০২২ সালের বন্যায় ক্ষতিগ্রস্তদের সহায়তায় তিনি অগ্রণী ভূমিকা পালন করেছেন।
                         </p>
                     </div>
-                    <div class="bg-green-50 p-6 rounded-xl border border-green-200">
-                        <h4 class="font-bold text-green-800 mb-4 text-xl">নেতৃত্ব ও দর্শন</h4>
-                        <p class="text-sm leading-relaxed">
+                    <div class="bg-white p-6 rounded-xl border-l-4 border-green-600 shadow-md">
+                        <h4 class="font-bold text-green-800 mb-4 text-xl underline decoration-yellow-400">নেতৃত্ব ও দর্শন</h4>
+                        <p class="text-gray-700 leading-relaxed text-sm lg:text-base">
                             দ্রব্যমূল্যের ঊর্ধ্বগতি, ফিলিস্তিন ইস্যু এবং ধর্মীয় অবমাননার প্রতিবাদসহ যে-কোনো ধরনের অন্যায়ের বিরুদ্ধে তিনি রাজপথে সক্রিয় থেকে যোগ্য নেতৃত্বের পরিচয় দিয়েছেন। সামাজিক দায়বদ্ধতা থেকে তিনি একটি অরাজনৈতিক স্বেচ্ছাসেবী সংগঠন প্রতিষ্ঠা করেছেন; যার মাধ্যমে প্রতি বছর আন্তর্জাতিক তাফসিরুল কুরআন মাহফিল আয়োজন করে থাকেন। এছাড়াও পরিবেশ সুরক্ষা, বিনামূল্যে চিকিৎসা ও আত্মনির্ভরশীলতা তৈরিতে প্রতিনিয়ত নিরলস কাজ করে যাচ্ছেন।
                         </p>
                     </div>
                 </div>
-                <p class="text-center mt-8 font-bold text-gray-700 italic">মূলত সুশিক্ষা, সমাজ বোধ ও ন্যায়পরায়ণতার এক বিরল সমন্বয় হিসেবে তিনি আধুনিক প্রজন্মের কাছে অনুকরণীয় দৃষ্টান্ত।</p>
+                <div class="text-center mt-12">
+                    <p class="text-xl font-bold text-gray-700 bg-gray-100 inline-block px-6 py-3 rounded-lg shadow-sm">
+                        সুশিক্ষা, সমাজ বোধ ও ন্যায়পরায়ণতার এক বিরল সমন্বয়।
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -92,103 +108,107 @@
     <section id="manifesto" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">আমাদের অঙ্গীকারসমূহ</h2>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-green-800">আমাদের অঙ্গীকারসমূহ</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
                 <p class="text-xl text-gray-600 italic">প্রিয় এলাকাবাসী, একটি আধুনিক, নিরাপদ ও বৈষম্যহীন জনপদ গড়ে তোলার লক্ষ্যে আমাদের অঙ্গীকারসমূহ।</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-                <!-- Point 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-green-600">
-                    <h3 class="font-bold text-xl mb-3 text-green-700">১. আধুনিক শিক্ষা ও মেধা বিকাশ:</h3>
-                    <p class="text-gray-700 text-sm">একটি আধুনিক ও শিক্ষিত প্রজন্ম গড়ে তুলতে প্রয়োজনীয় ফ্রি শিক্ষা ব্যবস্থা চালসহ মেধাবী ও অসচ্ছল শিক্ষার্থীদের জন্য নিয়মিত বৃত্তি ও শিক্ষা উপকরণ বিতরণ করা হবে। এলাকার স্কুল-কলেজ-মাদরাসাসহ সকল শিক্ষাপ্রতিষ্ঠানের অবকাঠামো উন্নয়ন এবং উচ্চশিক্ষায় দেশ-বিদেশে স্কলারশিপ প্রাপ্তিতে বিশেষ সহায়তা সেল গঠন করা হবে। পাবলিক ও প্রাইভেট বিশ্ববিদ্যালয় ভর্তি পরীক্ষার্থীদের জন্য যাতায়াত সুবিধা নিশ্চিত করা হবে।</p>
-                    <p class="mt-2 font-bold text-xs text-red-600">শিক্ষা দিয়ে গড়ব দেশ, মেধাবীদের বাংলাদেশ।</p>
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Point 1-10 mapped from images -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-600 card-hover">
+                    <h3 class="font-bold text-lg lg:text-xl mb-3 text-red-700">১. আধুনিক শিক্ষা ও মেধা বিকাশ:</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">একটি আধুনিক ও শিক্ষিত প্রজন্ম গড়ে তুলতে প্রয়োজনীয় ফ্রি শিক্ষা ব্যবস্থা চালসহ মেধাবী ও অসচ্ছল শিক্ষার্থীদের জন্য নিয়মিত বৃত্তি ও শিক্ষা উপকরণ বিতরণ করা হবে। এলাকার স্কুল-কলেজ-মাদরাসাসহ সকল শিক্ষাপ্রতিষ্ঠানের অবকাঠামো উন্নয়ন এবং উচ্চশিক্ষায় দেশ-বিদেশে স্কলারশিপ প্রাপ্তিতে বিশেষ সহায়তা সেল গঠন করা হবে।</p>
+                    <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded">শিক্ষা দিয়ে গড়ব দেশ, মেধাবীদের বাংলাদেশ।</span>
                 </div>
 
-                <!-- Point 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-green-600">
-                    <h3 class="font-bold text-xl mb-3 text-green-700">২. সামাজিক সুরক্ষা ও বিশেষ ভাতা:</h3>
-                    <p class="text-gray-700 text-sm">চট্টগ্রাম-৮ আসনের প্রতিটি স্তরে সামাজিক নিরাপত্তা নিশ্চিত করতে অটিজম, প্রতিবন্ধী, বয়স্ক এবং অসহায় বিধবা ও স্বামী পরিত্যক্তা মহিলাদের জন্য বিশেষ ভাতার ব্যবস্থা করা হবে। দরিদ্র মায়েদের মাতৃত্বকালীন সহায়তা, আলেম-ওলামা, খতিব ও ইমামদের সম্মানী নিশ্চিত করা হবে। স্বাধীনতার পূর্বাপর সকল সংগ্রামে আহতদের পরিবারের পুনর্বাসন এবং যথাযথ সম্মান ও সুযোগ-সুবিধা প্রদান করা হবে।</p>
-                    <p class="mt-2 font-bold text-xs text-red-600">সুরক্ষিত সমাজ গড়ি, হকের সমাজ তৈরি করি।</p>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-600 card-hover">
+                    <h3 class="font-bold text-lg lg:text-xl mb-3 text-red-700">২. সামাজিক সুরক্ষা ও বিশেষ ভাতা:</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">অটিজম, প্রতিবন্ধী, বয়স্ক এবং অসহায় বিধবা ও স্বামী পরিত্যক্তা মহিলাদের জন্য বিশেষ ভাতার ব্যবস্থা করা হবে। দরিদ্র মায়েদের মাতৃত্বকালীন সহায়তা, আলেম-ওলামা, খতিব ও ইমামদের সম্মানী নিশ্চিত করা হবে। স্বাধীনতার পূর্বাপর সকল সংগ্রামে আহতদের পরিবারের পুনর্বাসন করা হবে।</p>
+                    <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded">সুরক্ষিত সমাজ গড়ি, হকের সমাজ তৈরি করি।</span>
                 </div>
 
-                <!-- Point 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-green-600">
-                    <h3 class="font-bold text-xl mb-3 text-green-700">৩. মানসম্মত চিকিৎসা ও স্বাস্থ্যসেবা:</h3>
-                    <p class="text-gray-700 text-sm">বোয়ালখালী, চান্দগাঁও, পাঁচলাইশ ও বায়েজিদ আংশিক এলাকায় আধুনিক চিকিৎসা সেবা নিশ্চিত করতে ফ্রি স্বাস্থ্য ক্যাম্প ও সার্বজনীন স্বাস্থ্যসেবা চালু করা হবে। নারীদের জন্য বিশেষায়িত স্বাস্থ্যসেবা এবং শিশু ও মাতৃসদন, চক্ষু ও ডায়াবেটিস হাসপাতাল প্রতিষ্ঠা করা হবে। ক্যান্সার, কিডনি ও লিভারের মতো গুরুতর রোগে আক্রান্ত দরিদ্র রোগীদের আর্থিক সহায়তার পাশাপাশি বিদ্যমান স্বাস্থ্য কমপ্লেক্সগুলোকে আধুনিকায়ন করা হবে।</p>
-                    <p class="mt-2 font-bold text-xs text-red-600">স্বাস্থ্যসেবা ঘরের কাছে, যেন সবার জীবন বাঁচে।</p>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-600 card-hover">
+                    <h3 class="font-bold text-lg lg:text-xl mb-3 text-red-700">৩. মানসম্মত চিকিৎসা ও স্বাস্থ্যসেবা:</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">ফ্রি স্বাস্থ্য ক্যাম্প ও সার্বজনীন স্বাস্থ্যসেবা চালু করা হবে। নারীদের জন্য বিশেষায়িত স্বাস্থ্যসেবা এবং শিশু ও মাতৃসদন, চক্ষু ও ডায়াবেটিস হাসপাতাল প্রতিষ্ঠা করা হবে। ক্যান্সার, কিডনি ও লিভারের মতো গুরুতর রোগে আক্রান্ত দরিদ্র রোগীদের আর্থিক সহায়তা প্রদান করা হবে।</p>
+                    <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded">স্বাস্থ্যসেবা ঘরের কাছে, যেন সবার জীবন বাঁচে।</span>
                 </div>
 
-                <!-- Point 4 -->
-                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-green-600">
-                    <h3 class="font-bold text-xl mb-3 text-green-700">৪. কালুরঘাট সেতু ও নিরাপদ সড়ক ব্যবস্থা:</h3>
-                    <p class="text-gray-700 text-sm">দীর্ঘদিনের আকাঙ্ক্ষিত কর্ণফুলী নদীর ওপর কালুরঘাট সেতু নির্মাণের সকল চেষ্টা অব্যাহত থাকবে। কালুরঘাট ব্রিজ পুনর্নির্মাণ এবং বিদ্যমান সড়কগুলোর আমূল সংস্কার ও প্রশস্তকরণ করা হবে। ফিটনেসবিহীন গাড়ি ও ভাড়া নৈরাজ্য বন্ধ করে নিরাপদ সড়ক নিশ্চিত করা হবে। যানজট নিরসন এবং ট্রাফিক আইন মানাতে ব্যাপক সচেতনতামূলক কর্মসূচি গ্রহণ করা হবে। আধুনিক বাস টার্মিনাল ও ফুট ওভারব্রিজ নির্মাণ করা হবে।</p>
-                    <p class="mt-2 font-bold text-xs text-red-600">যানজট এবার হবে রদ, সড়ক হবে নিরাপদ।</p>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-600 card-hover">
+                    <h3 class="font-bold text-lg lg:text-xl mb-3 text-red-700">৪. কালুরঘাট সেতু ও নিরাপদ সড়ক:</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">কর্ণফুলী নদীর ওপর কালুরঘাট সেতু নির্মাণের সকল চেষ্টা অব্যাহত থাকবে। বিদ্যমান সড়কগুলোর আমূল সংস্কার ও প্রশস্তকরণ করা হবে। ফিটনেসবিহীন গাড়ি ও ভাড়া নৈরাজ্য বন্ধ করে নিরাপদ সড়ক নিশ্চিত করা হবে। আধুনিক বাস টার্মিনাল ও ফুট ওভারব্রিজ নির্মাণ করা হবে।</p>
+                    <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded">যানজট এবার হবে রদ, সড়ক হবে নিরাপদ।</span>
                 </div>
 
-                <!-- Point 5 -->
-                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-green-600">
-                    <h3 class="font-bold text-xl mb-3 text-green-700">৫. তরুণ প্রজন্মের শক্তিকে কাজে লাগিয়ে সমৃদ্ধ চট্টগ্রাম-৮:</h3>
-                    <p class="text-gray-700 text-sm">তারুণ্য এক প্রবল সম্ভাবনাময় শক্তির নাম। তরুণদের জন্য মানসম্মত শিক্ষা, আইটি সেক্টর তথা আধুনিক কম্পিউটার এবং ডিজিটাল প্রশিক্ষণের ব্যবস্থা করা হবে। নতুন ব্যবসা শুরু করার জন্য সহজ শর্তে ঋণ ও বিনামূল্যে পরামর্শ সেবা প্রদান করা হবে। খেলাধুলা ও সাংস্কৃতিক চর্চার জন্য আধুনিক মাঠ ও মঞ্চ নির্মাণ, দেশে-বিদেশে কর্মসংস্থানের সুযোগ সৃষ্টি এবং মাদক ও সন্ত্রাসমুক্ত নিরাপদ পরিবেশ নিশ্চিত করা হবে।</p>
-                    <p class="mt-2 font-bold text-xs text-red-600">দেশ গড়তে অনন্য, শক্তি মোদের তারুণ্য।</p>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-600 card-hover">
+                    <h3 class="font-bold text-lg lg:text-xl mb-3 text-red-700">৫. সমৃদ্ধ চট্টগ্রাম-৮ ও তরুণ প্রজন্ম:</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">তরুণদের জন্য মানসম্মত শিক্ষা, আইটি সেক্টর তথা আধুনিক কম্পিউটার এবং ডিজিটাল প্রশিক্ষণের ব্যবস্থা করা হবে। নতুন ব্যবসা শুরু করার জন্য সহজ শর্তে ঋণ ও বিনামূল্যে পরামর্শ সেবা প্রদান করা হবে। খেলাধুলা ও সাংস্কৃতিক চর্চার জন্য আধুনিক মাঠ ও মঞ্চ নির্মাণ করা হবে।</p>
+                    <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded">দেশ গড়তে অনন্য, শক্তি মোদের তারুণ্য।</span>
                 </div>
 
-                <!-- Point 6 -->
-                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-green-600">
-                    <h3 class="font-bold text-xl mb-3 text-green-700">৬. নারীশিক্ষা, সুরক্ষা ও ক্ষমতায়ন:</h3>
-                    <p class="text-gray-700 text-sm">নারীদের আত্মনির্ভরশীল করতে বিশেষ কারিগরি শিক্ষা কেন্দ্র, নার্সিং কলেজ ও উদ্যোক্তাদের জন্য সহজ শর্তে ঋণের ব্যবস্থা থাকবে। কুটির শিল্পের নববিপ্লব সাধনের যথাসাধ্য চেষ্টা করা হবে। নির্যাতিত ও অসহায় নারীদের জন্য নিরাপদ আবাসন বা শেল্টার হোম প্রতিষ্ঠা করা হবে। ইভটিজিং ও নারী পাচার রোধে আইনি সহায়তার পাশাপাশি ব্যাপক সামাজিক সচেতনতা গড়ে তোলা হবে।</p>
-                    <p class="mt-2 font-bold text-xs text-red-600">নারী দেশের শক্তি হবে, দেশ গড়তে সহায় হবে।</p>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-600 card-hover">
+                    <h3 class="font-bold text-lg lg:text-xl mb-3 text-red-700">৬. নারীশিক্ষা, সুরক্ষা ও ক্ষমতায়ন:</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">নারীদের আত্মনির্ভরশীল করতে বিশেষ কারিগরি শিক্ষা কেন্দ্র, নার্সিং কলেজ ও উদ্যোক্তাদের জন্য সহজ শর্তে ঋণের ব্যবস্থা থাকবে। নির্যাতিত ও অসহায় নারীদের জন্য নিরাপদ আবাসন বা শেল্টার হোম প্রতিষ্ঠা করা হবে। নারী পাচার রোধে আইনি সহায়তা প্রদান করা হবে।</p>
+                    <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded">নারী দেশের শক্তি হবে, দেশ গড়তে সহায় হবে।</span>
                 </div>
 
-                <!-- Point 7 -->
-                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-green-600">
-                    <h3 class="font-bold text-xl mb-3 text-green-700">৭. শিল্পায়ন ও বেকারত্ব দূরীকরণ:</h3>
-                    <p class="text-gray-700 text-sm">প্রতিটি পরিবারে অন্তত একজনের আয়ের উৎস নিশ্চিত করার লক্ষ্যে কুটির শিল্প প্রশিক্ষণ কেন্দ্র ও ক্ষুদ্র উদ্যোক্তাদের ঋণের ব্যবস্থা করা হবে। দারিদ্র্য বিমোচনে ক্ষুদ্র ঋণ নয়; বরং স্থায়ী আয়ের পথ তৈরি করা হবে। স্থানীয় কাঁচামালভিত্তিক মাঝারি শিল্প স্থাপনের মাধ্যমে বেকারত্বমুক্ত চট্টগ্রাম-৮ আসন গড়ে তোলা হবে। পরিবেশবান্ধব শিল্প কারখানা স্থাপন এবং পর্যটন শিল্প বিকাশে কর্মসংস্থান সৃষ্টি করা হবে।</p>
-                    <p class="mt-2 font-bold text-xs text-red-600">সবার আগে কর্ম চাই, কর্ম ছাড়া মর্ম নাই।</p>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-600 card-hover">
+                    <h3 class="font-bold text-lg lg:text-xl mb-3 text-red-700">৭. শিল্পায়ন ও বেকারত্ব দূরীকরণ:</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">প্রতিটি পরিবারে অন্তত একজনের আয়ের উৎস নিশ্চিত করার লক্ষ্যে কুটির শিল্প প্রশিক্ষণ কেন্দ্র ও ক্ষুদ্র উদ্যোক্তাদের ঋণের ব্যবস্থা করা হবে। স্থানীয় কাঁচামালভিত্তিক মাঝারি শিল্প স্থাপনের মাধ্যমে বেকারত্বমুক্ত চট্টগ্রাম-৮ আসন গড়ে তোলা হবে।</p>
+                    <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded">সবার আগে কর্ম চাই, কর্ম ছাড়া মর্ম নাই।</span>
                 </div>
 
-                <!-- Point 8 -->
-                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-green-600">
-                    <h3 class="font-bold text-xl mb-3 text-green-700">৮. শান্তি-শৃঙ্খলা ও নিরাপত্তা ব্যবস্থা জোরদার:</h3>
-                    <p class="text-gray-700 text-sm">আইনশৃঙ্খলা বাহিনীর সহায়তায় সুশাসন ও ন্যায়বিচার প্রতিষ্ঠায় জানমালের নিরাপত্তা বিধান করা হবে। সন্ত্রাস, চাঁদাবাজি ও মাদক পাচার রোধে জিরো টলারেন্স নীতি গ্রহণ করা হবে। সামাজিক শৃঙ্খলা বিনষ্টকারীদের কঠোর হস্তে দমন করে অপরাধমুক্ত ও শান্তিপূর্ণ এলাকা নিশ্চিত করা হবে। প্রশাসনিক স্বচ্ছতা নিশ্চিত করতে সকল সরকারি দপ্তরে কঠোর মনিটরিং এবং দুর্নীতিমুক্ত পরিবেশ তৈরি করা হবে।</p>
-                    <p class="mt-2 font-bold text-xs text-red-600">বন্ধ করব ধান্দাবাজি, মাদক-সন্ত্রাস-চাঁদাবাজি।</p>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-600 card-hover">
+                    <h3 class="font-bold text-lg lg:text-xl mb-3 text-red-700">৮. শান্তি-শৃঙ্খলা ও নিরাপত্তা:</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">আইনশৃঙ্খলা বাহিনীর সহায়তায় সুশাসন ও ন্যায়বিচার প্রতিষ্ঠায় জানমালের নিরাপত্তা বিধান করা হবে। সন্ত্রাস, চাঁদাবাজি ও মাদক পাচার রোধে জিরো টলারেন্স নীতি গ্রহণ করা হবে। প্রশাসনিক স্বচ্ছতা নিশ্চিত করতে সকল সরকারি দপ্তরে কঠোর মনিটরিং করা হবে।</p>
+                    <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded">বন্ধ করব ধান্দাবাজি, মাদক-সন্ত্রাস-চাঁদাবাজি।</span>
                 </div>
 
-                <!-- Point 9 -->
-                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-green-600">
-                    <h3 class="font-bold text-xl mb-3 text-green-700">৯. ভিন্ন ধর্মাবলম্বীদের নিরাপত্তা এবং সাম্প্রদায়িক সম্প্রীতি:</h3>
-                    <p class="text-gray-700 text-sm">ভিন্ন ধর্মাবলম্বীদের নিরাপত্তা, সমানাধিকার ও সমৃদ্ধি নিশ্চিত করা আমাদের অন্যতম অগ্রাধিকার। মদিনা সনদের ভিত্তিতে জীবন-সম্পত্তি-উপাসনালয়ের পূর্ণ নিরাপত্তা, শিক্ষায় বিশেষ বৃত্তি ও কর্মসংস্থানে সমান সুযোগ প্রদান করা হবে। মসজিদ, মাজার, মন্দির, প্যাগোডা ও গির্জার সংস্কার এবং সকল ধর্মীয় প্রতিষ্ঠানে বিনামূল্যে বিদ্যুৎ সরবরাহের ব্যবস্থা করা হবে। ধর্মীয় ও সাংস্কৃতিক স্বাধীনতা নিশ্চিত করে সম্প্রীতির চট্টগ্রাম-৮ গড়া হবে।</p>
-                    <p class="mt-2 font-bold text-xs text-red-600">হকের প্রশ্নে বিভেদ নয়, মানুষ মোদের পরিচয়।</p>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-600 card-hover">
+                    <h3 class="font-bold text-lg lg:text-xl mb-3 text-red-700">৯. সাম্প্রদায়িক সম্প্রীতি ও নিরাপত্তা:</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">মদিনা সনদের ভিত্তিতে ভিন্ন ধর্মাবলম্বীদের জীবন-সম্পত্তি-উপাসনালয়ের পূর্ণ নিরাপত্তা ও সমানাধিকার নিশ্চিত করা হবে। মসজিদ, মাজার, মন্দির, প্যাগোডা ও গির্জার সংস্কার এবং সকল ধর্মীয় প্রতিষ্ঠানে বিনামূল্যে বিদ্যুৎ সরবরাহের ব্যবস্থা করা হবে।</p>
+                    <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded">হকের প্রশ্নে বিভেদ নয়, মানুষ মোদের পরিচয়।</span>
                 </div>
 
-                <!-- Point 10 -->
-                <div class="bg-white p-6 rounded-xl shadow-md card-hover border-t-4 border-green-600">
-                    <h3 class="font-bold text-xl mb-3 text-green-700">১০. কর্ণফুলী নদী-শাসন ও পরিবেশ রক্ষা:</h3>
-                    <p class="text-gray-700 text-sm">কর্ণফুলী নদীর ভাঙন রোধে স্থায়ী প্রতিরক্ষা বাঁধ নির্মাণ এবং নিয়মিত ড্রেজিং নিশ্চিত করা হবে। নদীর পাড়ে অবৈধ স্থাপনা উচ্ছেদ এবং পানি দূষণমুক্ত রাখতে কার্যকর ব্যবস্থা নেওয়া হবে। আধুনিক বর্জ্য নিষ্কাশন ও প্রক্রিয়াজাতকরণ ব্যবস্থা চালুর মাধ্যমে এলাকাকে দূষণমুক্ত করা হবে। পরিবেশ রক্ষায় ব্যাপক বৃক্ষরোপণ কর্মসূচি এবং কৃষি ব্যবস্থাকে আধুনিক ও যান্ত্রিকীকরণের মাধ্যমে কৃষকদের লাভবান করা হবে।</p>
-                    <p class="mt-2 font-bold text-xs text-red-600">স্বচ্ছ পানি, শক্ত পাড়, কর্ণফুলীর অধিকার।</p>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-600 card-hover">
+                    <h3 class="font-bold text-lg lg:text-xl mb-3 text-red-700">১০. কর্ণফুলী নদী-শাসন ও পরিবেশ রক্ষা:</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">নদীর ভাঙন রোধে স্থায়ী প্রতিরক্ষা বাঁধ নির্মাণ এবং নিয়মিত ড্রেজিং নিশ্চিত করা হবে। আধুনিক বর্জ্য নিষ্কাশন ব্যবস্থার মাধ্যমে এলাকাকে দূষণমুক্ত করা হবে। পরিবেশ রক্ষায় ব্যাপক বৃক্ষরোপণ কর্মসূচি এবং কৃষি ব্যবস্থাকে যান্ত্রিকীকরণ করা হবে।</p>
+                    <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded">স্বচ্ছ পানি, শক্ত পাড়, কর্ণফুলীর অধিকার।</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="py-16 bg-green-900 text-white text-center">
+    <!-- Final Call to Action -->
+    <section class="py-16 bg-white text-center border-t border-gray-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-6 italic">সন্ত্রাস, দুর্নীতি ও মাদকমুক্ত আধুনিক সমাজ গড়ার সুযোগ দিন</h2>
-            <div class="inline-block bg-white text-green-900 px-8 py-4 rounded-full text-2xl font-black shadow-2xl mb-8">
-                মোমবাতি মার্কায় ভোট দিন
+            <h2 class="text-3xl font-bold mb-8 text-green-900">সন্ত্রাস, দুর্নীতি ও মাদকমুক্ত আধুনিক সমাজ গড়ার সুযোগ দিন</h2>
+            <div class="flex flex-col items-center">
+                <div class="bg-gray-900 text-white p-6 rounded-2xl shadow-2xl flex flex-col items-center gap-4 border-4 border-yellow-500 transform hover:scale-105 transition">
+                     <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C12 2 9 6 9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8C15 6 12 2 12 2Z" fill="#FFA000"/>
+                        <rect x="10" y="11" width="4" height="11" rx="1" fill="white"/>
+                        <path d="M10 14H14" stroke="black" stroke-width="0.5"/>
+                        <path d="M10 18H14" stroke="black" stroke-width="0.5"/>
+                    </svg>
+                    <span class="text-3xl lg:text-5xl font-black">মোমবাতি মার্কায় ভোট দিন</span>
+                </div>
+                <p class="mt-8 text-xl font-semibold text-red-600">নতুন স্বপ্ন, নতুন ধারা। চট্টগ্রাম-৮ হবে সবার সেরা!</p>
             </div>
-            <p class="text-lg">নতুন স্বপ্ন, নতুন ধারা। চট্টগ্রাম-৮ হবে সবার সেরা!</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-10 border-t border-gray-800">
+    <footer class="bg-green-900 text-white py-12">
         <div class="container mx-auto px-4 text-center">
-            <p class="mb-4">প্রচারণায়: চট্টগ্রাম-৮, বোয়ালখালী-চান্দগাঁও-পাঁচলাইশ-বায়েজিদ (আংশিক) আসনের সর্বস্তরের জনগণ।</p>
-            <div class="flex justify-center space-x-4 mb-6 text-white font-bold">
-                <span>ইনসাফ</span> | <span>উন্নয়ন</span> | <span>সমৃদ্ধি</span>
+            <p class="text-lg md:text-xl mb-6 font-medium">প্রচারণায়: চট্টগ্রাম-৮, বোয়ালখালী-চান্দগাঁও-পাঁচলাইশ-বায়েজিদ (আংশিক) আসনের সর্বস্তরের জনগণ।</p>
+            <div class="flex justify-center space-x-6 mb-8 text-sm lg:text-base font-bold opacity-80">
+                <span class="border-r pr-6 border-white/20">ইনসাফ</span>
+                <span class="border-r pr-6 border-white/20">উন্নয়ন</span>
+                <span>সমৃদ্ধি</span>
             </div>
-            <p class="text-xs">&copy; ২০২৫ নির্বাচনী প্রচারণা কমিটি। সর্বস্বত্ব সংরক্ষিত।</p>
+            <div class="text-xs opacity-50">
+                &copy; ২০২৬ নির্বাচনী প্রচারণা টিম | Abswer.com
+            </div>
         </div>
     </footer>
 
