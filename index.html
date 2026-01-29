@@ -65,6 +65,7 @@
             <nav class="hidden md:flex space-x-8 font-bold text-gray-600 uppercase text-sm items-center">
                 <a href="#home" class="hover:text-green-700 transition">হোম</a>
                 <a href="#about" class="hover:text-green-700 transition">পরিচিতি</a>
+                <a href="biography.html" class="hover:text-green-700 transition text-green-700">জীবনী</a>
                 <a href="gallery.html" class="hover:text-green-700 transition">গ্যালারি</a>
                 <a href="#manifesto" class="hover:text-green-700 transition">অঙ্গীকার</a>
                 <a href="#downloads" class="px-4 py-2 bg-green-50 text-green-700 rounded-full hover:bg-green-100 transition"><i class="fas fa-download mr-2"></i>তথ্য ও নথিপত্র</a>
@@ -83,6 +84,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 space-y-3 shadow-xl absolute w-full left-0 top-full">
             <a href="#home" onclick="toggleMenu()" class="block font-bold text-gray-700 hover:text-green-700 p-2">হোম</a>
             <a href="#about" onclick="toggleMenu()" class="block font-bold text-gray-700 hover:text-green-700 p-2">পরিচিতি</a>
+            <a href="biography.html" onclick="toggleMenu()" class="block font-bold text-gray-700 hover:text-green-700 p-2">জীবনী</a>
             <a href="gallery.html" onclick="toggleMenu()" class="block font-bold text-gray-700 hover:text-green-700 p-2">গ্যালারি</a>
             <a href="#manifesto" onclick="toggleMenu()" class="block font-bold text-gray-700 hover:text-green-700 p-2">অঙ্গীকারনামা</a>
             <a href="#downloads" onclick="toggleMenu()" class="block font-bold text-green-700 bg-green-50 rounded p-2">তথ্য ডাউনলোড</a>
@@ -174,6 +176,13 @@
                             <p class="mt-4 p-4 bg-green-50 border-l-4 border-green-600 rounded-r-xl italic font-medium text-green-900">
                                 "অন্যায়কে অন্যায় বলতে না পারলে মুসলমান হওয়ার দরকার নেই।" — সৈয়দ হাসান আজহারী
                             </p>
+                            
+                            <!-- New CTA Button -->
+                            <div class="mt-8">
+                                <a href="biography.html" class="inline-flex items-center gap-2 bg-green-700 text-white px-6 py-3 rounded-full font-bold hover:bg-green-800 transition shadow-lg group">
+                                    বিস্তারিত জীবনী দেখুন <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -271,7 +280,6 @@
             </div>
             
             <div class="text-center mt-10">
-                <!-- LINK CHANGED HERE -->
                 <a href="gallery.html" class="inline-flex items-center gap-2 text-green-700 font-bold hover:bg-green-50 px-6 py-3 rounded-full transition border border-green-200 shadow-sm">
                     সব ছবি দেখুন <i class="fas fa-images text-lg"></i>
                 </a>
@@ -288,14 +296,18 @@
                     <h3 class="text-3xl font-black mb-3">প্রয়োজনীয় নথিপত্র</h3>
                     <p class="text-green-100 mb-6">প্রার্থীর জীবনবৃত্তান্ত এবং নির্বাচন কমিশন সম্পর্কিত তথ্য ডাউনলোড করুন।</p>
                 </div>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
-                    <a href="cv.pdf" target="_blank" class="flex items-center justify-center gap-3 bg-white text-green-900 px-6 py-4 rounded-xl font-bold hover:bg-yellow-400 hover:text-black transition shadow-lg">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-end flex-wrap">
+                    <a href="cv.pdf" target="_blank" class="flex items-center justify-center gap-3 bg-white text-green-900 px-6 py-4 rounded-xl font-bold hover:bg-yellow-400 hover:text-black transition shadow-lg w-full sm:w-auto">
                         <i class="fas fa-file-user text-xl"></i>
                         <span>জীবনবৃত্তান্ত (CV)</span>
                     </a>
-                    <a href="ec-info.pdf" target="_blank" class="flex items-center justify-center gap-3 bg-green-800 border border-green-600 text-white px-6 py-4 rounded-xl font-bold hover:bg-green-700 transition shadow-lg">
+                    <a href="ec-info.pdf" target="_blank" class="flex items-center justify-center gap-3 bg-green-800 border border-green-600 text-white px-6 py-4 rounded-xl font-bold hover:bg-green-700 transition shadow-lg w-full sm:w-auto">
                         <i class="fas fa-file-contract text-xl"></i>
                         <span>হলফনামা ও তথ্য</span>
+                    </a>
+                    <a href="A%20%E0%A5%A4lance%20at%20Syed%20Hasan%20Azhari.pdf" target="_blank" class="flex items-center justify-center gap-3 bg-green-700 border border-green-500 text-white px-6 py-4 rounded-xl font-bold hover:bg-green-600 transition shadow-lg w-full sm:w-auto">
+                        <i class="fas fa-book-open text-xl"></i>
+                        <span>বই: এক নজরে (PDF)</span>
                     </a>
                 </div>
             </div>
