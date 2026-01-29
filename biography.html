@@ -1,1 +1,398 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>জীবন ও কর্ম | সৈয়দ মোহাম্মদ হাসান আজহারী</title>
+    <meta name="description" content="সৈয়দ মোহাম্মদ হাসান আজহারীর বিস্তারিত জীবনবৃত্তান্ত, শিক্ষা, কর্মজীবন এবং সামাজিক ও রাজনৈতিক অবদানের দলিল।">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abswerit/hasanazhari/main/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <style>
+        body { font-family: 'Hind Siliguri', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .gradient-brand { background: linear-gradient(135deg, #006837 0%, #014122 100%); }
+        .section-title { position: relative; display: inline-block; }
+        .section-title::after { content: ''; position: absolute; bottom: -10px; left: 0; width: 60px; height: 4px; background: #eab308; border-radius: 2px; }
+        
+        /* Custom Timeline */
+        .timeline-line::before { content: ''; position: absolute; top: 0; bottom: 0; left: 20px; width: 4px; background: #e2e8f0; border-radius: 2px; }
+        @media (min-width: 768px) {
+            .timeline-line::before { left: 50%; transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden flex flex-col min-h-screen">
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+    <!-- Navigation -->
+    <header class="glass-nav shadow-sm sticky top-0 z-[100]">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition">
+                <div class="bg-green-700 text-white p-2 rounded-xl font-bold text-lg shadow-inner">৮</div>
+                <div>
+                    <h1 class="text-green-800 font-extrabold text-lg leading-none">চট্টগ্রাম-৮</h1>
+                    <p class="text-[10px] uppercase tracking-tighter text-gray-500 font-bold">সংসদীয় আসন</p>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex space-x-8 font-bold text-gray-600 uppercase text-sm items-center">
+                <a href="index.html" class="hover:text-green-700 transition">হোম</a>
+                <a href="#" class="text-green-700">জীবনী</a>
+                <a href="gallery.html" class="hover:text-green-700 transition">গ্যালারি</a>
+                <a href="index.html#manifesto" class="hover:text-green-700 transition">অঙ্গীকার</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="hidden sm:flex items-center gap-2 text-sm font-bold text-gray-600 hover:text-green-700 transition">
+                    <i class="fas fa-arrow-left"></i> ফিরে যান
+                </a>
+                <button onclick="toggleMenu()" class="md:hidden p-2 text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 space-y-3 shadow-xl absolute w-full left-0 top-full">
+            <a href="index.html" class="block font-bold text-gray-700 hover:text-green-700 p-2">হোম</a>
+            <a href="#" class="block font-bold text-green-700 bg-green-50 rounded p-2">জীবনী</a>
+            <a href="gallery.html" class="block font-bold text-gray-700 hover:text-green-700 p-2">গ্যালারি</a>
+            <a href="index.html#manifesto" class="block font-bold text-gray-700 hover:text-green-700 p-2">অঙ্গীকারনামা</a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="gradient-brand text-white py-16 md:py-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+        <div class="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center gap-10">
+            <div class="md:w-1/3 flex justify-center md:justify-end">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 border-4 border-yellow-400 rounded-full overflow-hidden shadow-2xl">
+                    <img src="https://raw.githubusercontent.com/abswerit/hasanazhari/main/picture/01.jpg" alt="Syed Hasan Azhari" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="md:w-2/3 text-center md:text-left">
+                <span class="bg-white/20 text-yellow-300 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm">এক নজরে</span>
+                <h1 class="text-4xl md:text-6xl font-black mt-4 mb-4 leading-tight">সৈয়দ হাসান আজহারী</h1>
+                <p class="text-xl md:text-2xl font-light text-green-100 italic mb-6">
+                    "অন্যায়কে অন্যায় বলতে না পারলে মুসলমান হওয়ার দরকার নেই।"
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start text-sm font-bold text-white/80">
+                    <span class="flex items-center gap-2"><i class="fas fa-graduation-cap"></i> আল-আজহার গ্র্যাজুয়েট</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-microphone"></i> ইসলামিক স্কলার</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-hands-helping"></i> সমাজসেবক</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction & Family -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6 section-title">প্রারম্ভিক জীবন ও পরিবার</h2>
+                    <p class="text-slate-600 leading-relaxed mb-4 text-justify">
+                        হযরত শাহজালাল (রহ.)-এর জালালি প্রেরণায় উজ্জীবিত ব্যক্তিত্ব সৈয়দ হাসান আজহারী। তাঁর জন্ম ১৯৯২ সালের ১৪ ডিসেম্বর চট্টগ্রামের বায়েজিদে এক সম্ভ্রান্ত মুসলিম পরিবারে।
+                    </p>
+                    <p class="text-slate-600 leading-relaxed mb-4 text-justify">
+                        তিনি আল্লামা সৈয়দ আছিয়র রহমান আল-কাদরী (সাবেক অধ্যক্ষ, জামেয়া আহমদিয়া সুন্নিয়া কামিল মাদ্রাসা ও শ্রেষ্ঠ শিক্ষক পদকপ্রাপ্ত) এবং মরহুমা সৈyদা জাহানারা বেগমের জ্যেষ্ঠ পুত্র। পারিবারিক ঐতিহ্য, আলেমদের সাহচর্য এবং উন্নত শিক্ষা তাঁকে ছোটবেলা থেকেই জনকল্যাণমুখী করে তুলেছে।
+                    </p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-2xl border-l-4 border-green-600">
+                    <h3 class="font-bold text-xl mb-4 text-green-800">পারিবারিক তথ্য</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-birthday-cake text-green-600 mt-1"></i>
+                            <span><strong>জন্ম:</strong> ১৪ ডিসেম্বর, ১৯৯২ (বায়েজিদ, চট্টগ্রাম)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-user-tie text-green-600 mt-1"></i>
+                            <span><strong>পিতা:</strong> আল্লামা সৈয়দ আছিয়র রহমান আল-কাদরী</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-user text-green-600 mt-1"></i>
+                            <span><strong>মাতা:</strong> মরহুমা সৈয়দা জাহানারা বেগম (১৯৭১–২০২২)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Career -->
+    <section class="py-16 bg-slate-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-2xl mb-6">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6 section-title">শিক্ষা জীবন</h2>
+                    <div class="space-y-6">
+                        <div class="relative pl-6 border-l-2 border-slate-200">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-green-500"></div>
+                            <h4 class="font-bold text-lg">প্রাথমিক শিক্ষা</h4>
+                            <p class="text-slate-500 text-sm">শাহ হাবিবুল্লাহ প্রাথমিক বিদ্যালয়, কুলগাঁও</p>
+                        </div>
+                        <div class="relative pl-6 border-l-2 border-slate-200">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-green-500"></div>
+                            <h4 class="font-bold text-lg">দাখিল ও আলিম</h4>
+                            <p class="text-slate-500 text-sm">জামেয়া আহমদিয়া সুন্নিয়া কামিল মাদ্রাসা (২০০৭ ও ২০০৯)</p>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded">GPA 5.00</span>
+                        </div>
+                        <div class="relative pl-6 border-l-2 border-slate-200">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-green-500"></div>
+                            <h4 class="font-bold text-lg">স্নাতক (সম্মান)</h4>
+                            <p class="text-slate-500 text-sm">আল-আজহার বিশ্ববিদ্যালয়, মিশর (২০১৫)</p>
+                            <p class="text-xs text-gray-500">বিভাগ: শরীয়াহ ও আইন (৮০% নম্বর)</p>
+                        </div>
+                        <div class="relative pl-6 border-l-2 border-slate-200">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-yellow-400 animate-pulse"></div>
+                            <h4 class="font-bold text-lg">এমফিল (গবেষণা)</h4>
+                            <p class="text-slate-500 text-sm">ইউনিভার্সিটি অফ মালায়া, মালয়েশিয়া</p>
+                            <p class="text-xs text-gray-500 italic">গবেষণার বিষয়: ইসলামী আইনে বাল্যবিবাহ ও বাল্যবিবাহ নিরোধ আইন, ২০১৭</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6 section-title">কর্মজীবন ও দক্ষতা</h2>
+                    <ul class="space-y-4 text-slate-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-mosque text-blue-500 mt-1.5"></i>
+                            <div>
+                                <strong class="block text-lg">খতিব (বর্তমান)</strong>
+                                <span class="text-sm text-gray-500">রেলওয়ে গাউসুল আজম শাহী জামে মসজিদ, ঢাকা ও আলী সারাং জামে মসজিদ, চট্টগ্রাম।</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-chalkboard-teacher text-blue-500 mt-1.5"></i>
+                            <div>
+                                <strong class="block text-lg">সাবেক অধ্যক্ষ (২০১৮-১৯)</strong>
+                                <span class="text-sm text-gray-500">মাদ্রাসা-এ-তৈয়্যবিয়া তাহেরিয়া সুন্নিয়া, চট্টগ্রাম।</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-language text-blue-500 mt-1.5"></i>
+                            <div>
+                                <strong class="block text-lg">আরবি প্রশিক্ষক (২০১৬-১৭)</strong>
+                                <span class="text-sm text-gray-500">আঞ্চলিক মানবসম্পদ উন্নয়ন কেন্দ্র, যুব উন্নয়ন অধিদপ্তর, সাভার।</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-microphone-alt text-blue-500 mt-1.5"></i>
+                            <div>
+                                <strong class="block text-lg">পাবলিক স্পিকার</strong>
+                                <span class="text-sm text-gray-500">২০১৭ থেকে ২০২৪ পর্যন্ত ২,০০০+ জনসভায় ভাষণ প্রদান।</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Humanitarian Service (Timeline) -->
+    <section class="py-16 bg-white relative">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="text-center mb-16">
+                <span class="text-green-600 font-bold uppercase tracking-widest text-sm">মানুষের পাশে</span>
+                <h2 class="text-3xl md:text-5xl font-black mt-2">মানবসেবায় অবদান</h2>
+            </div>
+
+            <div class="relative timeline-line space-y-12">
+                <!-- Event 1 -->
+                <div class="md:flex items-center justify-between group">
+                    <div class="md:w-[45%] mb-4 md:mb-0 md:text-right md:pr-10">
+                        <h3 class="text-xl font-bold text-slate-900">লিবিয়া সংকট (২০১১)</h3>
+                        <p class="text-slate-600 mt-2">লিবিয়া যুদ্ধের সময় মিশর-লিবিয়া সীমান্তে স্বেচ্ছাসেবক হিসেবে আটকে পড়া বাংলাদেশিদের দেশে ফেরাতে সহায়তা করেন।</p>
+                        <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded mt-2">মিশরে বাংলাদেশ রাষ্ট্রদূতের সম্মাননা প্রাপ্ত</span>
+                    </div>
+                    <div class="hidden md:block w-4 h-4 bg-green-600 rounded-full absolute left-1/2 -translate-x-1/2 border-4 border-white shadow"></div>
+                    <div class="md:w-[45%] md:pl-10">
+                        <img src="https://raw.githubusercontent.com/abswerit/hasanazhari/main/picture/03.jpg" class="rounded-xl shadow-md w-full h-48 object-cover group-hover:scale-105 transition duration-500" alt="Libya Crisis">
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="md:flex items-center justify-between flex-row-reverse group">
+                    <div class="md:w-[45%] mb-4 md:mb-0 md:pl-10">
+                        <h3 class="text-xl font-bold text-slate-900">কোভিড-১৯ সেবা (২০২০)</h3>
+                        <p class="text-slate-600 mt-2">করোনা মহামারীতে জীবনের ঝুঁকি নিয়ে লাশের গোসল, কাফন ও দাফনে সরাসরি অংশগ্রহণ। অক্সিজেন ও ওষুধ বিতরণ কার্যক্রম পরিচালনা।</p>
+                    </div>
+                    <div class="hidden md:block w-4 h-4 bg-green-600 rounded-full absolute left-1/2 -translate-x-1/2 border-4 border-white shadow"></div>
+                    <div class="md:w-[45%] md:text-right md:pr-10">
+                        <img src="https://raw.githubusercontent.com/abswerit/hasanazhari/main/picture/07.jpg" class="rounded-xl shadow-md w-full h-48 object-cover group-hover:scale-105 transition duration-500" alt="Covid 19 Service">
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="md:flex items-center justify-between group">
+                    <div class="md:w-[45%] mb-4 md:mb-0 md:text-right md:pr-10">
+                        <h3 class="text-xl font-bold text-slate-900">বন্যা ও দুর্যোগ মোকাবেলা (২০২২-২৪)</h3>
+                        <p class="text-slate-600 mt-2">সিলেট ও কুড়িগ্রামের ভয়াবহ বন্যা (২০২২), বিএম ডিপো অগ্নিকাণ্ড (২০২২), বঙ্গবাজার অগ্নিকাণ্ড (২০২৩) এবং ফেনি-ফটিকছড়ি বন্যায় (২০২৪) ত্রাণ ও উদ্ধার কার্যক্রম।</p>
+                    </div>
+                    <div class="hidden md:block w-4 h-4 bg-green-600 rounded-full absolute left-1/2 -translate-x-1/2 border-4 border-white shadow"></div>
+                    <div class="md:w-[45%] md:pl-10">
+                        <div class="grid grid-cols-2 gap-2">
+                             <img src="https://raw.githubusercontent.com/abswerit/hasanazhari/main/picture/09.jpg" class="rounded-lg shadow w-full h-24 object-cover" alt="Flood Relief 1">
+                             <img src="https://raw.githubusercontent.com/abswerit/hasanazhari/main/picture/10.jpg" class="rounded-lg shadow w-full h-24 object-cover" alt="Flood Relief 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Initiatives & Leadership -->
+    <section class="py-16 bg-slate-900 text-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Social Works -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 border-b border-gray-700 pb-4">সামাজিক উদ্যোগসমূহ</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 hover:border-green-500 transition">
+                            <i class="fas fa-tree text-green-400 text-2xl mb-3"></i>
+                            <h4 class="font-bold mb-2">পরিবেশ সুরক্ষা</h4>
+                            <p class="text-sm text-gray-400">বৃক্ষরোপণ কর্মসূচি ও পরিবেশ সচেতনতা তৈরি।</p>
+                        </div>
+                        <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 hover:border-blue-500 transition">
+                            <i class="fas fa-hand-holding-water text-blue-400 text-2xl mb-3"></i>
+                            <h4 class="font-bold mb-2">পানি বিতরণ</h4>
+                            <p class="text-sm text-gray-400">তীব্র গরমে পথচারী ও শ্রমিকদের মাঝে বিশুদ্ধ পানি বিতরণ।</p>
+                        </div>
+                        <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 hover:border-yellow-500 transition">
+                            <i class="fas fa-bicycle text-yellow-400 text-2xl mb-3"></i>
+                            <h4 class="font-bold mb-2">কর্মসংস্থান সৃষ্টি</h4>
+                            <p class="text-sm text-gray-400">রিকশা বিতরণ ও আত্মনির্ভরশীলতা তৈরিতে সহায়তা।</p>
+                        </div>
+                        <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 hover:border-red-500 transition">
+                            <i class="fas fa-heartbeat text-red-400 text-2xl mb-3"></i>
+                            <h4 class="font-bold mb-2">ফ্রি মেডিকেল ক্যাম্প</h4>
+                            <p class="text-sm text-gray-400">বিনামূল্যে সুন্নতে খৎনা ও চিকিৎসা সেবা প্রদান।</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 border-b border-gray-700 pb-4">নেতৃত্ব ও সংগঠন</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-users-cog text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-green-400">প্রতিষ্ঠাতা, আযহারী সাইবার টিম বাংলাদেশ</h4>
+                                <p class="text-gray-400 text-sm mt-1">২০১৯ সালে প্রতিষ্ঠিত এই সংগঠনের মাধ্যমে হাজারো তরুণকে দ্বীনি শিক্ষা ও সমাজসেবায় উদ্বুদ্ধ করছেন।</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-globe-africa text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-green-400">সাবেক ভিপি, আল-আজহার ফরেন স্টুডেন্টস ইউনিয়ন</h4>
+                                <p class="text-gray-400 text-sm mt-1">২০১৩-১৪ সালে ৮৪% ভোট পেয়ে প্রথম বাংলাদেশি হিসেবে এই পদে নির্বাচিত হন।</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-flag text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-green-400">প্রচার সম্পাদক, বাংলাদেশ ছাত্র সমিতি (মিশর)</h4>
+                                <p class="text-gray-400 text-sm mt-1">২০১২-১৩ সালে মিশরে বাংলাদেশি ছাত্রদের কল্যাণে কাজ করেছেন।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activism & Protests -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-12 section-title">প্রতিবাদ ও সংগ্রাম</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
+                    <h4 class="font-bold text-red-700 mb-2">২০২৪-এর গণঅভ্যুত্থান</h4>
+                    <p class="text-sm text-slate-600">ছাত্র-জনতার আন্দোলনে সক্রিয় অংশগ্রহণ। রিমান্ডের হুমকি উপেক্ষা করে শিক্ষার্থীদের পক্ষে রাজপথে অবস্থান।</p>
+                </div>
+                <div class="bg-orange-50 p-6 rounded-2xl border border-orange-100">
+                    <h4 class="font-bold text-orange-700 mb-2">নবীপ্রেম ও প্রতিবাদ</h4>
+                    <p class="text-sm text-slate-600">ফ্রান্স ও ভারতে মহানবী (সা.)-এর অবমাননার বিরুদ্ধে ঢাকা ও চট্টগ্রামে বিশাল বিক্ষোভ মিছিলের নেতৃত্ব প্রদান।</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                    <h4 class="font-bold text-blue-700 mb-2">ফিলিস্তিন সংহতি</h4>
+                    <p class="text-sm text-slate-600">ফিলিস্তিনিদের অধিকার রক্ষায় জনসচেতনতা তৈরি এবং কোকা-কোলার মতো ইসরায়েল সমর্থক পণ্য বর্জনের ডাক।</p>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-2xl border border-purple-100">
+                    <h4 class="font-bold text-purple-700 mb-2">পাঠ্যপুস্তক সংস্কার</h4>
+                    <p class="text-sm text-slate-600">পাঠ্যপুস্তকে ইসলাম বিরোধী ও অনৈতিক বিষয়বস্তুর বিরুদ্ধে আপোষহীন অবস্থান ও জনমত গঠন।</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <h4 class="font-bold text-gray-700 mb-2">দ্রব্যমূল্য ও দুর্নীতি</h4>
+                    <p class="text-sm text-slate-600">অসাধু সিন্ডিকেট, দুর্নীতিবাজ এবং অর্থ পাচারকারীদের বিরুদ্ধে রাজপথে সোচ্চার প্রতিবাদ।</p>
+                </div>
+                <div class="bg-yellow-50 p-6 rounded-2xl border border-yellow-100">
+                    <h4 class="font-bold text-yellow-700 mb-2">সার্বভৌমত্ব রক্ষা</h4>
+                    <p class="text-sm text-slate-600">ভারতীয় আধিপত্যবাদ এবং পার্বত্য চট্টগ্রাম নিয়ে ষড়যন্ত্রের বিরুদ্ধে দেশপ্রেমিক জনতার পক্ষে অবস্থান।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="py-16 bg-slate-100 text-center">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <i class="fas fa-quote-left text-4xl text-green-300 mb-4"></i>
+            <p class="text-xl md:text-2xl font-light text-slate-700 mb-6 leading-relaxed">
+                "সৈয়দ হাসান আজহারী একটি ন্যায়ভিত্তিক ও মানবিক সমাজ গড়তে বদ্ধপরিকর। শিক্ষা, সমাজসেবা ও সক্রিয় আন্দোলনের মাধ্যমে তিনি আজ লাখো তরুণের অনুপ্রেরণা। আগামীর বাংলাদেশ বিনির্মাণে তিনি এক উজ্জ্বল বাতিঘর।"
+            </p>
+            <div class="font-bold text-green-800">– আযহারী সাইবার টিম এডমিন প্যানেল</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center gap-6 mb-8 text-2xl text-gray-400">
+                <a href="#" class="hover:text-blue-500 transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-red-500 transition"><i class="fab fa-youtube"></i></a>
+                <a href="https://hasanazhari.abswer.com" target="_blank" class="hover:text-green-500 transition"><i class="fas fa-globe"></i></a>
+            </div>
+
+            <div class="text-[11px] text-gray-600 uppercase tracking-widest font-bold">
+                &copy; ২০২৬ নির্বাচনী প্রচারণা সেল | চট্টগ্রাম-৮ সংসদীয় আসন
+                <br>ডিজাইন: <a href="https://abswer.com" class="hover:text-green-500 transition">MNA Team - Abswer.com</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
